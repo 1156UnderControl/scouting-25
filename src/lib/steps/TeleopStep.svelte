@@ -43,7 +43,7 @@
       <NumberInput max={10} bind:value={formData.teleProcessor} />
     </div>
     <div>
-      <h3>Net 🥅</h3>
+      <h3>Net 🗑️</h3>
       <NumberInput max={10} bind:value={formData.teleNet} />
     </div>
   </div>

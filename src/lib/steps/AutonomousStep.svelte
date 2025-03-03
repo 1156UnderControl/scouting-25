@@ -45,7 +45,7 @@
         <NumberInput max={7} bind:value={formData.autoProcessor} />
       </div>
       <div>
-        <h3>Net 🥅</h3>
+        <h3>Net 🗑️</h3>
         <NumberInput max={7} bind:value={formData.autoNet} />
       </div>
     </div>
