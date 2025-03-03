@@ -123,7 +123,7 @@
   }
 </script>
 
-<section class="flex flex-col items-center">
+<section class="flex flex-col items-center mt-[-32px]">
   {#key currentStep}
     {#if currentStep === 0}
       <StartStep {formData} />
