@@ -19,19 +19,19 @@
   <section class="flex justify-center">
     <div class="flex flex-col gap-8 mb-5">
       <div>
-        <h3>L4 🪸</h3>
+        <h3>L4 Auto 🪸</h3>
         <NumberInput max={7} bind:value={formData.autoL4Corals} />
       </div>
       <div>
-        <h3>L3 🪸</h3>
+        <h3>L3 Auto 🪸</h3>
         <NumberInput max={7} bind:value={formData.autoL3Corals} />
       </div>
       <div>
-        <h3>L2 🪸</h3>
+        <h3>L2 Auto 🪸</h3>
         <NumberInput max={7} bind:value={formData.autoL2Corals} />
       </div>
       <div>
-        <h3>L1 🪸</h3>
+        <h3>L1 Auto 🪸</h3>
         <NumberInput max={7} bind:value={formData.autoL1Corals} />
       </div>
     </div>
