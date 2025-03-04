@@ -44,6 +44,7 @@
     endClimbAttempt: "off",
     endClimbLevel: "",
     endClimbFailed: "off",
+    trappedInAlgae: "off",
     comments: "",
     endFouls: 0,
   });
@@ -116,6 +117,7 @@
       formData.endClimbAttempt = "off";
       formData.endClimbLevel = "";
       formData.endClimbFailed = "off";
+      formData.trappedInAlgae = "off";
       formData.comments = "";
       formData.endFouls = 0;
     } catch (err) {

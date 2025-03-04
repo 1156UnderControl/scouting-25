@@ -61,6 +61,7 @@ export async function POST({ request }) {
         endClimbAttempt: data.endClimbAttempt,
         endClimbLevel: data.endClimbLevel,
         endClimbFailed: data.endClimbFailed,
+        trappedInAlgae: data.trappedInAlgae,
         comments: data.comments,
         endFouls: data.endFouls,
       },

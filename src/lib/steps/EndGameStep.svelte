@@ -30,6 +30,8 @@
           <Switch label="Failed to climb" bind:value={formData.endClimbFailed} />
         </div>
       {/if}
+
+      <Switch label="Trapped in algae?" bind:value={formData.trappedInAlgae} />
     </div>
   </div>
 
