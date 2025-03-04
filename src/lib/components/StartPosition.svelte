@@ -7,7 +7,7 @@
 </script>
 
 <div class="flex justify-between mt-4 w-80 h-40 
-    bg-[url('src/lib/components/field.png')] bg-contain bg-no-repeat">
+    bg-[url('/field.png')] bg-contain bg-no-repeat">
     
     <label class="flex items-center w-full h-full">
         <input
