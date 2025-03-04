@@ -66,6 +66,12 @@
   }
 
   async function submit() {
+    if (formData.teamNumber == "" || formData.startZone == "") {
+      alert("Número do time e start zone devem ser preenchidos")
+      currentStep = 1;
+      return
+    }
+
     console.log(formData);
 
     try {
