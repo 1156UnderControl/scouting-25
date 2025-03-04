@@ -32,6 +32,7 @@ export async function POST({ request }) {
         teamNumber: data.teamNumber,
         matchNumber: data.matchNumber,
         matchLevel: data.matchLevel,
+        startZone: data.startZone,
 
         // auto
         autoLeft: data.autoLeft,

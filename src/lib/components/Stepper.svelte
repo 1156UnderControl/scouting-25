@@ -4,7 +4,6 @@
   import PreGameStep from "$lib/steps/PreGameStep.svelte";
   import StartStep from "$lib/steps/StartStep.svelte";
   import TeleopStep from "$lib/steps/TeleopStep.svelte";
-  import { onMount } from "svelte";
 
   let currentStep = $state(0);
   let { email, name, teams } = $props();
@@ -16,6 +15,7 @@
     teamNumber: "",
     matchNumber: 1,
     matchLevel: "practice",
+    startZone: "",
 
     // auto
     autoLeft: "off",
@@ -87,6 +87,7 @@
       currentStep = 0;
       formData.matchNumber++;
       formData.teamNumber = "";
+      formData.startZone = "";
 
       // auto
       formData.autoLeft = "off";

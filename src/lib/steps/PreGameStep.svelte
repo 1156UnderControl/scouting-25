@@ -2,6 +2,7 @@
   export let teams;
   export let formData;
 
+  import StartPosition from "$lib/components/StartPosition.svelte";
   import TeamSelection from "$lib/components/TeamSelection.svelte";
 </script>
 
@@ -21,4 +22,6 @@
       />
     </div>
   </div>
+
+  <StartPosition bind:selectedStartZone={formData.startZone}/>
 </section>
