@@ -1,38 +1,15 @@
-# sv
+# #1156 2025 REEFSCAPE scouting system
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+This is the #1156 Under Control scouting system for the 2025 FRC's REEFSCAPE season. It runs on SvelteKit 5 with TailwindCSS, gets data from the FRC API and saves it to Google Sheets for further analysis.
 
-## Creating a project
+## Running the project
 
-If you're seeing this, you've probably already done this step. Congrats!
-
-```bash
-# create a new project in the current directory
-npx sv create
-
-# create a new project in my-app
-npx sv create my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install`, start a development server:
+Clone the source code and use npm for installing the dependencies and running:
 
 ```bash
+git clone https://github.com/1156UnderControl/scouting-25
+cd scouting-25
+npm install
 npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
 ```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+    
