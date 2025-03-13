@@ -19,19 +19,19 @@
     <div class="flex flex-col gap-8 mb-5">
       <div>
         <h3>L4 Teleop 🪸</h3>
-        <NumberInput max={7} bind:value={formData.teleL4Corals} />
+        <NumberInput max={15} bind:value={formData.teleL4Corals} />
       </div>
       <div>
         <h3>L3 Teleop 🪸</h3>
-        <NumberInput max={7} bind:value={formData.teleL3Corals} />
+        <NumberInput max={15} bind:value={formData.teleL3Corals} />
       </div>
       <div>
         <h3>L2 Teleop 🪸</h3>
-        <NumberInput max={7} bind:value={formData.teleL2Corals} />
+        <NumberInput max={15} bind:value={formData.teleL2Corals} />
       </div>
       <div>
         <h3>L1 Teleop 🪸</h3>
-        <NumberInput max={7} bind:value={formData.teleL1Corals} />
+        <NumberInput max={15} bind:value={formData.teleL1Corals} />
       </div>
     </div>
     <img src="reef.png" class="w-[20%]" alt="a" />
