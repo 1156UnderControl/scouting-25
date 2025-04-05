@@ -6,6 +6,7 @@
   import TeleopStep from "$lib/steps/TeleopStep.svelte";
 
   let currentStep = $state(0);
+  let dataSent = $state(false);
   let { email, name, teams } = $props();
 
   let formData = $derived({
@@ -56,6 +57,7 @@
       currentStep++;
     } else {
       submit();
+      dataSent = true;
     }
   }
 
@@ -68,6 +70,7 @@
   async function submit() {
     if (formData.teamNumber == "" || formData.startZone == "") {
       alert("Número do time e start zone devem ser preenchidos")
+      dataSent = false;
       currentStep = 1;
       return
     }
@@ -90,6 +93,8 @@
 
       console.log("Server response:", responseData);
 
+      dataSent = false;
+      
       // resetando o form
       currentStep = 0;
       formData.matchNumber++;
@@ -160,7 +165,8 @@
     <button
       onclick={nextStep}
       class="mx-4 flex-1 rounded-full bg-sky-600 px-4 py-2 font-semibold text-white transition hover:bg-sky-500 focus:outline-hidden focus:ring-2 focus:ring-sky-600 focus:ring-offset-2"
-    >
+      disabled={dataSent}
+      >
       {#if currentStep == 0}
         Start
       {:else if currentStep < steps.length - 1}
