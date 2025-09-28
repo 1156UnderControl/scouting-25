@@ -17,7 +17,7 @@ export const load: PageServerLoad = async () => {
 
     try {
       const response = await fetch(
-        "https://frc-api.firstinspires.org/v3.0/2025/schedule/JOHNSON?tournamentLevel=Qual",
+        "https://frc-api.firstinspires.org/v3.0/2025/schedule/rspor?tournamentLevel=Qual",
         requestOptions,
       );
 
